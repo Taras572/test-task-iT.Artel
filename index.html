@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <div class="item_margin">
+        <div>
+            <h3>Верстка та Загальне</h3>
+            <ol>
+                <li><!-- 1 -->
+                    <p>Чи можна з js змінювати значення before, after? <br>
+                        не можна з js змінювати значення before, after оскільки вони не є елементами DOM.</p>
+                </li>
+                <li><!-- 2 -->
+                    <p>Що вказує значення "1em" і якого параметра він прив'язаний.
+                        1em це одиниця виміру відносно поточного розміру шрифта.</p>
+                </li>
+                <li><!-- 3 -->
+                    <p>Вмістити три блоки 20X20px в ряд, блок шириною 60px, при цьому у блоків повинні бути межі.
+                        Реалізуйте
+                        всі варіанти, які знаєте.</p>
+                    <p>flex</p>
+                    <div class="container">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+
+                    <p>grid</p>
+                    <div class="container2">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+
+                    <p>inline</p>
+                    <div class="container3">
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                        <div class="block3"></div>
+                    </div>
+                </li>
+                <li><!-- 4 -->
+                    <p>Є масив, де лежать об'єкти з датами, відсортуйте його за датами.</p>
+                    <p>відповідь у файлі main.js</p>
+                </li>
+                <li><!-- 5 -->
+                    <p>Напишіть код, який при натисканні на будь-який div всередині root буде виводити в консоль його
+                        id.</p>
+                    <div id="root" style="background: red;">
+                        root
+                        <span id="id1" style="background: lightblue;">id1</span>
+                        <div id="id2" style="background: green;">
+                            id2
+                            <div id="id3" style="background: yellow;">id3</div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>Angular</h3>
+            <ol>
+                <li><!-- 1 -->
+                    <p>Яка різниця між *ngIf і [hidden]?</p>
+                    <p>*ngIf видаляє/додає елемент з DOM дерева, [hidden] візуально приховує елемент але він присутній в
+                        DOM дереві</p>
+                </li>
+                <li><!-- 2 -->
+                    <p>Що таке Observable?</p>
+                    <p>observable це функція яка допомагає нам працювати з асинхронним кодом як і promise але з більшими
+                        можливостями,
+                        вона може видавати кілька значень протягом певного періоду часу, отримати результат з функції
+                        можна лише
+                        підписавшись на неї за допомогою subscribe(), також можна відписатись від функції unsubscribe()
+                    </p>
+                </li>
+                <li><!-- 3 -->
+                    <p> Виберіть правильні твердження про його використання (в іншому шаблоні компонента або модулі).
+                    </p>
+                    <p>1. &lt;welcome name="TestDome"&gt; &lt;/welcome &gt; відображатиме: "Welcome to TestDome!".</p>
+                </li>
+                <li><!-- 4 -->
+                    <p>Розглянемо наступний компонент, який можна використовувати для моделювання тварини та її шуму.
+                    </p>
+                    <p>1 Component, Input і Output всі необхідні імпорти цього компонента.</p>
+                    <p> 2 При включенні компонента AnimalNoise у шаблон мають бути вказані вхідні дані як тварин, так і
+                        шуму.</p>
+                    <p>4 При включенні до шаблону компонентів компонент AnimalNoise створює діапазон, що містить
+                        інтерполіроване
+                        ім'я тварин і кнопку, прив'язану до makeNoise().</p>
+                </li>
+                <li><!-- 5 -->
+                    <p>Які з таких тверджень щодо поведінки маршрутизаторів є правильними? (Виберіть усі прийнятні
+                        відповіді.)</p>
+                    <p> 1 Доступ до домашнього компонента можливий лише через перенаправлення кореневої URL-адреси.</p>
+                </li>
+                <li><!-- 6 -->
+                    <p>Виберіть правильні твердження. (Виберіть усі прийнятні відповіді.)</p>
+                    <p>1 Функція applyMixins застосовує реалізації Positionable і Rotatable до MovingObject.</p>
+                    <p>4 Клас Positionable можна змінити на інтерфейс без помилок компілятора.</p>
+                </li>
+                <li><!-- 7 -->
+                    <p>Нижче наведено файл address-list.component.html. Заповніть пробіли, щоб шаблон відображав один
+                        елемент li на адресу, і коректно пов'язував кожну адресу з полем AddressComponent.</p>
+                    <p>
+                    <p>
+                        &lt;ul &gt;<br>
+                        &lt;li *ngFor="let address of addresses" &gt;<br>
+                        &lt;app-address address="address"&gt; &lt;/app-address &gt;<br>
+                        &lt;/li&gt;<br>
+                        &lt;/ul &gt;<br>
+                    </p>
+                    <!-- <ul>
+                            <li *ngFor="let address of addresses">
+                                <app-address address="address"></app-address>
+                            </li>
+                        </ul> -->
+                    </p>
+                </li>
+            </ol>
+        </div>
+
+        <div>
+            <h3>Node JS</h3>
+            <ol>
+                <li><!-- 1 -->
+                    <p>Що таке файл package.json?</p>
+                    <p> 1 package.json це файл в якому зберігається список npm модулів які нам потрібно встановити за
+                        допомогою команди
+                        npm install, це потрібно для того щоб не завантажувати на віддалений репозиторій всі
+                        node_modules, за
+                        допомогою
+                        списку ми встановимо потрібні версії модулів на іншому робочому місці</p>
+                </li>
+                <li><!-- 2 -->
+                    <p>Які є типи запитів HTTP?</p>
+                    <p> Oсновні запити: <br>
+                        GET запитує дані з сервера <br>
+                        POST надсилає дані на сервер <br>
+                        PUT надісилає лише оновлені дані на сервер <br>
+                        DELETE видаляє дані з сервера <br>
+                    </p>
+                </li>
+                <li><!-- 3 -->
+                    <p>Поясніть різницю між локальним і глобальним встановленням пакетів npm</p>
+                    <p>
+                        Локальне встановлення npm модулів це коли модуль встановлюється в директорію node_modules та
+                        додається до файлу package.json
+                        кожного разу після завантаження проекту з віддаленого репозиторію нам потрібно встановити модулі
+                        із списку файлу package.json на робоче місце
+                    </p>
+                    <p>
+                        Глобальне встановлення npm модулів це коли модуль встановлюється в глобальний каталог, модуль не
+                        додається до файлу package.json модуль завжди буде йти у парі з проектом, тому його не потрібно
+                        буде встановлювати заново.
+                    </p>
+                </li>
+                <li><!-- 4 -->
+                    <p>Поясніть порядок виконання прослуховувачів подій у Node.js. Що буде результатом цього коду і
+                        чому?</p>
+                    <p>
+                        Результат коду: <br>
+                        Statement A <br>
+                        Emitted Statement - FIRST <br>
+                        Emitted Statement - SECOND <br>
+                        Statement B <br>
+                    </p>
+                    <p> eventEmitter.on('myEvent', (data) => { <br>
+                        console.log(data, '- FIRST'); <br>
+                        }); <br>
+                        перший прослуховувач виконається швидше оскільки він додається раніше ніж другий
+                    </p>
+                </li>
+                <li><!-- 5 -->
+                    <p>Поясніть, що не так із використанням async/await у циклі forEach. Чи працює він належним чином?
+                        Ви можете це виправити?</p>
+                    <p> оскільки forEach синхронний він не буде чекати завершення, він запустить завдання та піде далі
+                    </p>
+                    <p>
+                        import fs from 'fs-promise' <br>
+                        <br>
+                        async function printFiles () {<br>
+                            const files = await getFilePaths() // Assume this works fine<br>
+                            <br>
+                            for (const iterator of files) {<br>
+                                const contents = await fs.readFile(iterator, 'utf8');<br>
+                                console.log(contents);<br>
+                            }<br>
+                        }<br>
+                        printFiles()<br>
+
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

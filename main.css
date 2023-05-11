@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.item_margin {
+    margin: 20px;
+}
+
+.container {
+    width: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block ,.block3{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+.block3{
+    display: inline-block;
+    margin: -2px;
+}
+.block3:first-child{
+    margin-left: 0;
+
+}
+.block3:last-child{
+    margin-left: 0;
+
+}
+
+.container2 {
+    width: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container3{
+    width: 60px;
+}
